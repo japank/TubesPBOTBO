@@ -234,7 +234,7 @@ public class edit extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 try {
-            String sql = "DELETE FROM karya WHERE ('"+jTextField1.getText()+"==(SELECT nomor from karya)')";
+            String sql = "DELETE FROM karya WHERE nomor="+jTextField1.getText();
             java.sql.Connection conn=(Connection)Pbot.configDB();
             java.sql.PreparedStatement pst=conn.prepareStatement(sql);
             pst.execute();

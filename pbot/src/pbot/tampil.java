@@ -229,13 +229,13 @@ this.dispose();        // TODO add your handling code here:
     private void load_table(){
         // membuat tampilan model tabel
         DefaultTableModel model = new DefaultTableModel();
-        model.addColumn("No Karyawan");
+        model.addColumn("Nomor");
         model.addColumn("Nama");
         model.addColumn("Alamat");
-        model.addColumn("Gender");
+        model.addColumn("L/P");
         model.addColumn("Posisi");
         model.addColumn("Status");
-        model.addColumn("Gaji");
+        model.addColumn("gaji");
         
         //menampilkan data database kedalam tabel
         try {

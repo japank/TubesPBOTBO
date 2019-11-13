@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  *
  * @author ASUS ROG
  */
-public class edit extends javax.swing.JFrame {
+public class edit extends javax.swing.JFrame{
 
     /** Creates new form edit */
     public edit() {

@@ -247,6 +247,7 @@ this.dispose();        // TODO add your handling code here:
             while(res.next()){
                 model.addRow(new Object[]{res.getString(1),res.getString(2),res.getString(3),res.getString(4),res.getString(5),res.getString(6),res.getString(7)});
             }
+            
             jTable1.setModel(model);
         } catch (Exception e) {
         }}

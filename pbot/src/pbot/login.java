@@ -14,6 +14,8 @@ import javax.swing.JOptionPane;
  */
 public class login extends javax.swing.JFrame {
 
+
+
     /**
      * Creates new form login
      */
@@ -246,11 +248,13 @@ System.exit(0);        // TODO add your handling code here:
             if(user_app.equals("japank") && password_app.equals("123"))
             {
                 menu rgf = new menu();
-rgf.setVisible(true);
-rgf.pack();
-rgf.setLocationRelativeTo(null);
-rgf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-this.dispose();
+        rgf.setVisible(true);
+        rgf.pack();
+        rgf.setLocationRelativeTo(null);
+        rgf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        asd.asdd();
+        this.dispose();
+
             }
             else JOptionPane.showMessageDialog(null, "username atau password salah");
             {
@@ -265,6 +269,7 @@ this.dispose();
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

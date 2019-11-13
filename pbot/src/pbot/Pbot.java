@@ -8,12 +8,17 @@ package pbot;
 import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author ASUS ROG
  */
-public class Pbot {
+public class Pbot extends abstr{
+    
+    public void selamat(){
+        JOptionPane.showMessageDialog(null, "Koneksi DB berhasil");
+    }
     private static Connection mysqlconfig;
     public static Connection configDB()throws SQLException{
         try {
@@ -21,9 +26,11 @@ public class Pbot {
             String user="root"; //user database
             String pass=""; //password database
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-            mysqlconfig=(Connection) DriverManager.getConnection(url, user, pass);            
+            Pbot ss = new Pbot();
+            ss.selamat();
+            mysqlconfig=(Connection) DriverManager.getConnection(url, user, pass);
         } catch (Exception e) {
-            System.err.println("koneksi gagal "+e.getMessage()); //perintah menampilkan error pada koneksi
+            JOptionPane.showMessageDialog(null, "Tidak ada koneksi DB"); //perintah menampilkan error pada koneksi
         }
         return mysqlconfig;
     }    
